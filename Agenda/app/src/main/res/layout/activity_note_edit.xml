@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.Note_Edit"
+    android:background="#1F1D2C"
+    >
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       android:layout_marginBottom="40dp"
+        android:clipToPadding="false"
+        android:paddingBottom="10dp"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="#252234"
+                android:padding="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <ImageView
+                    android:id="@+id/imgback"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/ic_back"
+                    android:tint="#716C79" />
+
+                <TextView
+                    android:id="@+id/txtback"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/imgback"
+                    android:text="Agenda"
+                    android:textColor="#4F4A59"
+                    android:textSize="25sp" />
+
+                <Button
+                    android:id="@+id/backbtn"
+                    android:layout_width="124dp"
+                    android:layout_height="34dp"
+                    android:layout_marginEnd="270dp"
+                    android:layout_toStartOf="@+id/donebtn"
+                    android:background="#00FFFFFF" />
+
+                <Button
+                    android:id="@+id/savebtn"
+                    android:layout_width="119dp"
+                    android:layout_height="34dp"
+                    android:layout_marginStart="-130dp"
+                    android:layout_marginEnd="270dp"
+                    android:layout_toEndOf="@id/backbtn"
+                    android:background="#00FFFFFF" />
+
+                <ImageView
+                    android:id="@+id/donebtn"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="-110dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toLeftOf="@id/done"
+                    android:src="@drawable/box"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/done"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="10dp"
+                    android:text="Done"
+                    android:textColor="#4F4A59"
+                    android:textSize="20sp" />
+
+
+            </RelativeLayout>
+            <ImageView
+                android:id="@+id/imgnote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="12dp"
+                android:adjustViewBounds="true"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@id/NoteSub"/>
+            <LinearLayout
+                android:id="@+id/layoutweburl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="12dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@id/imgnote">
+                <TextView
+                    android:id="@+id/textweburl"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:autoLink="web"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+            <EditText
+                android:id="@+id/NoteTitle"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginEnd="12dp"
+                android:background="@null"
+                android:ems="10"
+                android:hint="Note Title"
+                android:imeOptions="actionDone"
+                android:importantForAutofill="no"
+                android:includeFontPadding="false"
+                android:inputType="text"
+                android:textColor="#C9C8C8"
+                android:textColorHint="#716C79"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.16" />
+
+            <TextView
+                android:id="@+id/dateofnote"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="#C9C8C8"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="@id/NoteTitle"
+                app:layout_constraintStart_toStartOf="@id/NoteTitle"
+                app:layout_constraintTop_toBottomOf="@id/NoteTitle"
+                />
+
+            <EditText
+                android:id="@+id/NoteSub"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="12dp"
+                android:background="@null"
+                android:hint="Note Subtitle"
+                android:importantForAutofill="no"
+                android:inputType="textMultiLine"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:textColor="#C9C8C8"
+                android:textColorHint="#716C79"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/dateofnote"
+                tools:layout_editor_absoluteY="213dp" />
+
+            <EditText
+                android:id="@+id/NoteText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="15dp"
+                android:background="@null"
+                android:gravity="top"
+                android:hint="Type your note here..."
+                android:importantForAutofill="no"
+                android:inputType="textMultiLine"
+                android:minHeight="100dp"
+                android:textColor="#C9C8C8"
+                android:textColorHint="#716C79"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/layoutweburl"
+                app:layout_constraintVertical_bias="0.0"
+                tools:layout_editor_absoluteX="32dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+    <include layout="@layout/edit_bar"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/college/Agenda/app/src/main/res/drawable/addNote.xml" value="0.29739583333333336" />
+        <entry key="..\:/college/Agenda/app/src/main/res/drawable/background_dialog.xml" value="0.29739583333333336" />
+        <entry key="..\:/college/Agenda/app/src/main/res/drawable/background_for_note.xml" value="0.29739583333333336" />
+        <entry key="..\:/college/Agenda/app/src/main/res/drawable/background_to_editbar.xml" value="0.29739583333333336" />
+        <entry key="..\:/college/Agenda/app/src/main/res/drawable/box.xml" value="0.29739583333333336" />
+        <entry key="..\:/college/Agenda/app/src/main/res/drawable/buttonshape.xml" value="0.3880208333333333" />
+        <entry key="..\:/college/Agenda/app/src/main/res/drawable/frame.xml" value="0.3880208333333333" />
+        <entry key="..\:/college/Agenda/app/src/main/res/drawable/group_2.xml" value="0.29739583333333336" />
+        <entry key="..\:/college/Agenda/app/src/main/res/drawable/home.xml" value="0.3880208333333333" />
+        <entry key="..\:/college/Agenda/app/src/main/res/drawable/ic_delete.xml" value="0.29739583333333336" />
+        <entry key="..\:/college/Agenda/app/src/main/res/drawable/ic_launcher_background.xml" value="0.29739583333333336" />
+        <entry key="..\:/college/Agenda/app/src/main/res/drawable/not_color_1.xml" value="0.29739583333333336" />
+        <entry key="..\:/college/Agenda/app/src/main/res/drawable/not_color_2.xml" value="0.29739583333333336" />
+        <entry key="..\:/college/Agenda/app/src/main/res/drawable/not_color_3.xml" value="0.29739583333333336" />
+        <entry key="..\:/college/Agenda/app/src/main/res/drawable/not_color_4.xml" value="0.29739583333333336" />
+        <entry key="..\:/college/Agenda/app/src/main/res/drawable/not_color_5.xml" value="0.29739583333333336" />
+        <entry key="..\:/college/Agenda/app/src/main/res/layout/activity_all_notes.xml" value="0.28125" />
+        <entry key="..\:/college/Agenda/app/src/main/res/layout/activity_folder_empty.xml" value="0.371875" />
+        <entry key="..\:/college/Agenda/app/src/main/res/layout/activity_folder_full.xml" value="0.371875" />
+        <entry key="..\:/college/Agenda/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/college/Agenda/app/src/main/res/layout/activity_note_edit.xml" value="0.25" />
+        <entry key="..\:/college/Agenda/app/src/main/res/layout/activity_notes.xml" value="0.33" />
+        <entry key="..\:/college/Agenda/app/src/main/res/layout/edit_bar.xml" value="0.33" />
+        <entry key="..\:/college/Agenda/app/src/main/res/layout/fragment_all.xml" value="0.25" />
+        <entry key="..\:/college/Agenda/app/src/main/res/layout/fragment_folder.xml" value="0.33" />
+        <entry key="..\:/college/Agenda/app/src/main/res/layout/item_container_note.xml" value="0.25" />
+        <entry key="..\:/college/Agenda/app/src/main/res/layout/layout_add_url.xml" value="0.28125" />
+        <entry key="..\:/college/Agenda/app/src/main/res/layout/layout_delete_note.xml" value="0.28125" />
+        <entry key="..\:/college/Agenda/app/src/main/res/layout/toolbar.xml" value="0.33" />
+        <entry key="..\:/college/Agenda/app/src/main/res/layout/toolbar2.xml" value="0.33" />
+        <entry key="..\:/college/Agenda/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.20394736842105263" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
